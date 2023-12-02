@@ -1,5 +1,5 @@
 | No  | Feature                        | Description                                         |
-|----|--------------------------------|-----------------------------------------------------|
+|----|--------------------------------|-----------------------------------------------------| 
 | 1  | uid                            | Unique identifier for each record.                   |
 | 2  | originh                        | Source host of the network flow.                     |
 | 3  | originp                        | Source port of the network flow.                     |
