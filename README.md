@@ -59,7 +59,13 @@ For now, lets determine some basic variables of interest. In order to select int
 
 ![download](https://github.com/tngos17/Network-Science/assets/64931318/bd78a255-34b8-4ba1-a858-e521fbb62c9f)
 
-As we can see varience drops quite heavily, so lets narrow it down a little.
+As we can see varience drops quite heavily, so lets narrow it down a little. 
 
 ![download](https://github.com/tngos17/Network-Science/assets/64931318/0eb4db1f-bb10-472d-befe-eb9e57b478bd)
+
+Another interesting visualization is the deploy the Pearson Correlation Heatmap. Fancy as it looks, this kind of specification is more of an exploritory element than a true benefit in terms of model fit.
+
+![download](https://github.com/tngos17/Network-Science/assets/64931318/17bfadfc-f321-4931-a593-d065d9b6a1d8)
+
+
 
