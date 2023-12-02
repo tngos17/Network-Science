@@ -14,9 +14,6 @@ data = pd.read_csv(r"ALLFLOWMETER_HIKARI2021.csv")
 df = df.drop('Unnamed: 0.1', axis=1)
 df = df.drop('Unnamed: 0', axis=1)
 
-# Filter out rows with 'traffic_category' equal to 'Background'
-df = df[df['traffic_category'] != 'Background']
-
 df = pd.DataFrame(data)
 
 # Set display options to show all rows and columns without scientific notation
