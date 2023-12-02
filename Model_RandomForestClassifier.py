@@ -5,6 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 from sklearn.preprocessing import StandardScaler
+from tabulate import tabulate
 
 # Assuming 'df' is your DataFrame
 # Create a sample DataFrame for illustration
@@ -57,9 +58,44 @@ accuracy = accuracy_score(y_test, y_pred)
 conf_matrix = confusion_matrix(y_test, y_pred)
 classification_rep = classification_report(y_test, y_pred)
 
+# Calculate total instances
+total_instances = len(y_test)
+
+# Calculate percentages
+percent_tp = (conf_matrix[1, 1] / total_instances) * 100
+percent_tn = (conf_matrix[0, 0] / total_instances) * 100
+percent_fp = (conf_matrix[0, 1] / total_instances) * 100
+percent_fn = (conf_matrix[1, 0] / total_instances) * 100
+
+# Define the confusion matrix information with percentages
+confusion_matrix_info = [
+    ["True Positives (TP)", conf_matrix[1, 1], f"{percent_tp:.2f}%"],
+    ["True Negatives (TN)", conf_matrix[0, 0], f"{percent_tn:.2f}%"],
+    ["False Positives (FP)", conf_matrix[0, 1], f"{percent_fp:.2f}%"],
+    ["False Negatives (FN)", conf_matrix[1, 0], f"{percent_fn:.2f}%"],
+    ["Total Instances", total_instances, "100.00%"]
+]
+
+# Print the confusion matrix table
+confusion_matrix_table = tabulate(confusion_matrix_info, headers=["Metric", "Count", "Percentage"], tablefmt="pretty")
+print(confusion_matrix_table)
+
 # Print the results
 print(f'Accuracy: {accuracy:.2f}')
 print('Confusion Matrix:')
-print(conf_matrix)
+
+# Print the confusion matrix table
+confusion_matrix_table = tabulate(confusion_matrix_info, headers=["Metric", "Count", "Percentage"], tablefmt="pretty")
+print(confusion_matrix_table)
+
+# Interpretations
+print("\nInterpretations:")
+print(f"- Instances correctly predicted as malicious (TP): {conf_matrix[1, 1]} ({percent_tp:.2f}%)")
+print(f"- Instances correctly predicted as benign (TN): {conf_matrix[0, 0]} ({percent_tn:.2f}%)")
+print(f"- Instances predicted as malicious but are actually benign (FP): {conf_matrix[0, 1]} ({percent_fp:.2f}%)")
+print(f"- Instances predicted as benign but are actually malicious (FN): {conf_matrix[1, 0]} ({percent_fn:.2f}%)")
+
 print('Classification Report:')
 print(classification_rep)
+
+
