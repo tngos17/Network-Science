@@ -24,7 +24,7 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 from sklearn.preprocessing import StandardScaler
 ```
 
-ata Verification
+###### Data Verification
 
 ```python
 print(df.columns)
