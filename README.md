@@ -53,4 +53,13 @@ The HIKARI dataset takes a reasonable approach by focusing on the application la
 ![Bar Chart](https://github.com/tngos17/Network-Science/assets/64931318/8f1301f4-dea8-4104-a1f0-a1533da6952d)
 
 
+# Focusing on Target Variables
+
+For now, lets determine some basic variables of interest. In order to select interesting variables we can take examine their variance and eliminate features on the lower end. This is a common technique of geature selection for preprocessing a machine learning model.
+
+![download](https://github.com/tngos17/Network-Science/assets/64931318/bd78a255-34b8-4ba1-a858-e521fbb62c9f)
+
+As we can see varience drops quite heavily, so lets narrow it down a little.
+
+![download](https://github.com/tngos17/Network-Science/assets/64931318/0eb4db1f-bb10-472d-befe-eb9e57b478bd)
 
