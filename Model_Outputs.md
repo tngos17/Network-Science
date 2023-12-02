@@ -28,4 +28,6 @@ Classification Report:
    macro avg       0.53      0.52      0.52     77026
 weighted avg       0.83      0.84      0.84     77026
 
-![Bar Chart](https://github.com/tngos17/Network-Science/assets/64931318/cdd26e32-d0ac-446f-95bd-c153d5cc6316)
+![download](https://github.com/tngos17/Network-Science/assets/64931318/698dddc7-daf0-43cf-858d-b0d1f3515d35)
+
+
