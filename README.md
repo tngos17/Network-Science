@@ -1,4 +1,4 @@
-
+# Network-Science
 Data Science on Network Traffic Data!
 
 Understanding network traffic is one of the most pressing issues to the information security professional. In this exercise I will be using the HIKARI 2021 data set to demonstraite some basic machine learning models as well as go over the techniques ued to get there. I had a lot of fun doing this and hope you will enjoy it as well!
@@ -78,4 +78,4 @@ Variables with 0.87 or 0.86 Correlation: `flow_iat.std`, `idle.max`, `fwd_iat.ma
 Almost all of these correlations are due to statistical self-reference and should highlight the potential value of implementing raw  `pcap` files for training data. Although the `HIKARI 2021` data has released such data which will be examined at a later point, let us continue to try and make sense of modeling a dataset which can be so publicly available due to its reshaping of features to make use of its anonymity.
 
 # Random Forest Classifier
-![Diagram](https://github.com/tngos17/Network-Science/assets/64931318/f9e60b91-f919-49ee-94bd-53e6b87ea9c4)# Network-Science
+![Diagram](https://github.com/tngos17/Network-Science/assets/64931318/f9e60b91-f919-49ee-94bd-53e6b87ea9c4)
