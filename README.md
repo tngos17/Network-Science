@@ -77,21 +77,11 @@ Variables with 0.87 or 0.86 Correlation: `flow_iat.std`, `idle.max`, `fwd_iat.ma
 
 Almost all of these correlations are due to statistical self-reference and should highlight the potential value of implementing raw  `pcap` files for training data. Although the `HIKARI 2021` data has released such data which will be examined at a later point, let us continue to try and make sense of modeling a dataset which can be so publicly available due to its reshaping of features to make use of its anonymity.
 
-# Random Forest Classifier
+# Initial Model - Random Forest Classifier
 ![Diagram](https://github.com/tngos17/Network-Science/assets/64931318/f9e60b91-f919-49ee-94bd-53e6b87ea9c4)
 
-Using a basic random forest classifier we are returned a rough model. By playing around with a cocktail of features and model arraingements I was able to get the following model specifications:
+Using a basic random forest classifier we are returned a rough model. By playing around with a cocktail of features and model arraingements I was able to get the following model specifications to an baseline accuracy of 0.84. We have yet to accoount for many of the traditional hurdles which may present our findings as more descriptive of our features than the actual targets.
 
-# Random Forest Classifier Output
-
-Interpretations:
-
-- Instances correctly predicted as malicious (TP): 963 (1.25%)
-- Instances correctly predicted as benign (TN): 63785 (82.81%)
-- Instances predicted as malicious but are actually benign (FP): 5702 (7.40%)
-- Instances predicted as benign but are actually malicious (FN): 6576 (8.54%)
-
-# Accuracy: 0.84
 ```
 +----------------------+-------+------------+
 |        Metric        | Count | Percentage |
@@ -103,7 +93,15 @@ Interpretations:
 |   Total Instances    | 77026 |  100.00%   |
 +----------------------+-------+------------+
 ```
+
+Interpretations:
+
+- Instances correctly predicted as malicious (TP): 963 (1.25%)
+- Instances correctly predicted as benign (TN): 63785 (82.81%)
+- Instances predicted as malicious but are actually benign (FP): 5702 (7.40%)
+- Instances predicted as benign but are actually malicious (FN): 6576 (8.54%)
 # Classification Report:
+
 ```
               precision    recall  f1-score   support
 
