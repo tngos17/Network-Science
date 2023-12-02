@@ -34,10 +34,11 @@ Lets visualize the types of traffic used in the data set using `pandas`.
 
 ![download](https://github.com/tngos17/Network-Science/assets/64931318/af6001bc-ca25-4cd4-b377-77a5452d8fc5)
 
-traffic_category     Label
-Benign               0        347431
-Background           0        170151
-Probing              1         23388
-Bruteforce           1          5884
-Bruteforce-XML       1          5145
-XMRIGCC CryptoMiner  1          3279
+| traffic_category    | Label | Count  |
+| ------------------- | ----- | ------ |
+| Benign              | 0     | 347431 |
+| Background          | 0     | 170151 |
+| Probing             | 1     | 23388  |
+| Bruteforce          | 1     | 5884   |
+| Bruteforce-XML      | 1     | 5145   |
+| XMRIGCC CryptoMiner | 1     | 3279   |
