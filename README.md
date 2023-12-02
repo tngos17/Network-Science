@@ -31,7 +31,5 @@ Here is a short list of features implemented by the dataset. For a full view vis
 | 86 | Label                           | The label assigned to the network flow, possibly indicating normal or malicious activity.|
 
 ## A Word on Varience
-![[Pasted image 20231201195226.png]]
 
-
-![[Pasted image 20231201195220.png
+![download](https://github.com/tngos17/Network-Science/assets/64931318/7178ab9c-16d3-47be-97ac-bf30bd5a3598)
