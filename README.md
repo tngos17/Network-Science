@@ -46,8 +46,11 @@ Below are the potential values for the `traffic_category` variable. The goal her
 | Bruteforce-XML      | 1     | 5145   |
 | XMRIGCC CryptoMiner | 1     | 3279   |
 
-The HIKARI dataset takes a reasonable approach by focusing on the application layer and utalizes a small variety of Malicious data to generate data. Unfortunately, the ratio of bad traffic to benign is problematic from a modeling perspective however, this is a problem that will be addressed at a later point as we are only in the pre-processing stage of this exercise.
-
 Lets visualize the types of traffic used in the data set using `pandas`.
-
 ![download](https://github.com/tngos17/Network-Science/assets/64931318/af6001bc-ca25-4cd4-b377-77a5452d8fc5)
+
+The HIKARI dataset takes a reasonable approach by focusing on the application layer and utalizes a small variety of Malicious data to generate data. Unfortunately, the ratio of bad traffic to benign is problematic from a modeling perspective however, this is a problem that will be addressed at a later point as we are only in the pre-processing stage of this exercise.
+![Bar Chart](https://github.com/tngos17/Network-Science/assets/64931318/8f1301f4-dea8-4104-a1f0-a1533da6952d)
+
+
+
