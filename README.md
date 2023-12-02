@@ -18,7 +18,7 @@ Next you will want to import the data into your python environment of choice. Fo
 # A First Glance 
 
 ## Data Features (HIKARI-2021)
-Here is a short list of features implemented by the dataset. For a full view visit the `Data_Features` page. To better understand and appreciate their selection I highly recommend reading the full publication.
+Here is a short list of features implemented by the dataset. For a full view visit the `Data_Features` page. To better understand and appreciate their selection I highly recommend reading the full publication. Some of these features will need to be excluded from our model such as uid and IP information to avoid obvious prediction correlation for those variables.
 
 | No  | Feature                        | Description                                         |
 |----|--------------------------------|-----------------------------------------------------|
@@ -29,8 +29,6 @@ Here is a short list of features implemented by the dataset. For a full view vis
 | ...|  | | |
 | 85 | traffic_category                | Category of network traffic.                       |
 | 86 | Label                           | The label assigned to the network flow, possibly indicating normal or malicious activity.|
-
-## Pandas 
 
 Lets visualize the types of traffic used in the data set.
 
