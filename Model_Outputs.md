@@ -19,6 +19,7 @@ Accuracy: 0.84
 +----------------------+-------+------------+
 
 Classification Report:
+```
               precision    recall  f1-score   support
 
            0       0.91      0.92      0.91     69487
@@ -27,7 +28,7 @@ Classification Report:
     accuracy                           0.84     77026
    macro avg       0.53      0.52      0.52     77026
 weighted avg       0.83      0.84      0.84     77026
-
+```
 ![download](https://github.com/tngos17/Network-Science/assets/64931318/698dddc7-daf0-43cf-858d-b0d1f3515d35)
 
 
