@@ -30,9 +30,12 @@ Here is a short list of features implemented by the dataset. For a full view vis
 | 85 | traffic_category                | Category of network traffic.                       |
 | 86 | Label                           | The label assigned to the network flow, possibly indicating normal or malicious activity.|
 
-Lets visualize the types of traffic used in the data set using `pandas`.
+# Target Variables
 
-![download](https://github.com/tngos17/Network-Science/assets/64931318/af6001bc-ca25-4cd4-b377-77a5452d8fc5)
+Below are the potential values for the `traffic_category` variable. The goal here is to create a model which can distinguish and predict between 
+1. Background data (i.e. network traffic which may or maynot contain malicious traffic)
+2. Benign data (i.e. syntethic traffic known to be non-mailicious)
+3. Malicious data (i.e. known malicious traffic conforming to the types listed below)
 
 | traffic_category    | Label | Count  |
 | ------------------- | ----- | ------ |
@@ -42,3 +45,9 @@ Lets visualize the types of traffic used in the data set using `pandas`.
 | Bruteforce          | 1     | 5884   |
 | Bruteforce-XML      | 1     | 5145   |
 | XMRIGCC CryptoMiner | 1     | 3279   |
+
+The HIKARI dataset takes a reasonable approach by focusing on the application layer and utalizes a small variety of Malicious data to generate data. Unfortunately, the ratio of bad traffic to benign is problematic from a modeling perspective however, this is a problem that will be addressed at a later point as we are only in the pre-processing stage of this exercise.
+
+Lets visualize the types of traffic used in the data set using `pandas`.
+
+![download](https://github.com/tngos17/Network-Science/assets/64931318/af6001bc-ca25-4cd4-b377-77a5452d8fc5)
