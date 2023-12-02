@@ -98,6 +98,8 @@ Interpretations:
 - Instances predicted as malicious but are actually benign (FP): 5702 (7.40%)
 - Instances predicted as benign but are actually malicious (FN): 6576 (8.54%)
 
+Unsuprizingly the issue lies in the models ability to appropriately classify and accturately predict malicious traffic. We should recall the overall shap and skew of the data towards `Label = 0` traffic as a potential cause for concern. More importantly, we must also consider the logistical useability of such a model. In the future I will be taking raw `.pcap` files from the same data source to use as training data hosted in an SQL database. Once that is done and I am satisfied with a more robustly developed machine learning model we can begin deploying our model on live network traffic! 
+
 Classification Report:
 ```
               precision    recall  f1-score   support
