@@ -72,13 +72,13 @@ For building a predictive model, we should consider variables that have a strong
 In summary:
 Here are some points to consider:
 
-Strong Positive Correlations:
- 
-  fwd_iat.tot and flow_iat.tot
-  flow_iat.max and idle.max
-  flow_iat.min and fwd_iat.min
-  
-Variables with 0.99 or 0.98 Correlation:
+1. Strong Positive Correlations:
+```
+fwd_iat.tot and flow_iat.tot
+flow_iat.max and idle.max
+flow_iat.min and fwd_iat.min
+```
+2 Variables with 0.99 or 0.98 Correlation:
 
   flow_iat.avg, fwd_iat.avg, and flow_iat.min
   
