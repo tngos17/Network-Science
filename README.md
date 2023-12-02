@@ -15,8 +15,10 @@ You will want the `ALLFLOWMETER_HIKARI2021.csv` and not the .pcap files although
 
 Next you will want to import the data into your python environment of choice. For this exercise primarily used Jupyter Notebooks however some alternatives like Kaggle can actually handle the entire `.csv`. As we get to more advances sections of the project we will dive into SQL implementation however, the process above should be fine for now.
 
-# A First Glance - Data Features (HIKARI-2021)
-Here is a short list of features implemented by the dataset. For a full view visit [Data_Features] To better understand and appreciate their selection I highly recommend reading the full publication.
+# A First Glance 
+
+## Data Features (HIKARI-2021)
+Here is a short list of features implemented by the dataset. For a full view visit the `Data_Features` page. To better understand and appreciate their selection I highly recommend reading the full publication.
 
 | No  | Feature                        | Description                                         |
 |----|--------------------------------|-----------------------------------------------------|
@@ -27,3 +29,9 @@ Here is a short list of features implemented by the dataset. For a full view vis
 | ...|  | | |
 | 85 | traffic_category                | Category of network traffic.                       |
 | 86 | Label                           | The label assigned to the network flow, possibly indicating normal or malicious activity.|
+
+## A Word on Varience
+![[Pasted image 20231201195226.png]]
+
+
+![[Pasted image 20231201195220.png
