@@ -70,32 +70,12 @@ For building a predictive model, we should consider variables that have a strong
 ![download](https://github.com/tngos17/Network-Science/assets/64931318/17bfadfc-f321-4931-a593-d065d9b6a1d8)
 
 In summary:
-Here are some points to consider:
 
-1. Strong Positive Correlations:
-```
-fwd_iat.tot and flow_iat.tot
-flow_iat.max and idle.max
-flow_iat.min and fwd_iat.min
-```
-2 Variables with 0.99 or 0.98 Correlation:
+Variables with 0.99 or 0.98 Correlation: `flow_iat.avg`, `fwd_iat.avg`, and `flow_iat.min`
+Variables with 0.97 or 0.96 Correlation: `active.std` and `active.max``idle.min` and `idle.avg`
+Variables with 0.95 or 0.94 Correlation: `bwd_iat.max`, `idle.max`, `fwd_iat.max`
+Variables with 0.93 or 0.91 Correlation: `fwd_iat.std`, `bwd_iat.std`, `flow_iat.max`, `idle.max`
+Variables with 0.90 or 0.88 Correlation: `fwd_iat.std`, `flow_iat.max`, `idle.max`
+Variables with 0.87 or 0.86 Correlation: `flow_iat.std`, `idle.max`, `fwd_iat.max`
 
-  flow_iat.avg, fwd_iat.avg, and flow_iat.min
-  
-Variables with 0.97 or 0.96 Correlation:
-
-  active.std and active.max
-  idle.min and idle.avg
-  
-Variables with 0.95 or 0.94 Correlation:
-
-bwd_iat.max, idle.max, fwd_iat.max
-Variables with 0.93 or 0.91 Correlation:
-
-fwd_iat.std, bwd_iat.std, flow_iat.max, idle.max
-Variables with 0.90 or 0.88 Correlation:
-
-fwd_iat.std, flow_iat.max, idle.max
-Variables with 0.87 or 0.86 Correlation:
-
-flow_iat.std, idle.max, fwd_iat.max
+Almost all of these correlations are due to statistical self-reference and should highlight the potential value of implementing raw  `pcap` files for training data. Although the `HIKARI 2021` data has released such data which will be examined at a later point, let us continue to try and make sense of modeling a dataset which can be so publicly available due to its reshaping of features to make use of its anonymity.
