@@ -16,7 +16,7 @@ You will want the `ALLFLOWMETER_HIKARI2021.csv` and not the .pcap files although
 Next you will want to import the data into your python environment of choice. For this exercise primarily used Jupyter Notebooks however some alternatives like Kaggle can actually handle the entire `.csv`. As we get to more advances sections of the project we will dive into SQL implementation however, the process above should be fine for now.
 
 # A First Glance - Data Features (HIKARI-2021)
-Here are the features Implemented by the dataset. To better understand and appreciate their selection I highly recommend reading the full publication.
+Here is a short list of features implemented by the dataset. For a full view visit [Data_Features] To better understand and appreciate their selection I highly recommend reading the full publication.
 
 | No  | Feature                        | Description                                         |
 |----|--------------------------------|-----------------------------------------------------|
@@ -24,8 +24,6 @@ Here are the features Implemented by the dataset. To better understand and appre
 | 2  | originh                        | Source host of the network flow.                     |
 | 3  | originp                        | Source port of the network flow.                     |
 | 4  | responh                         | Destination host of the network flow.                |
-| 5  | responp                         | Destination port of the network flow.                |
-| 6  | flow_duration                   | Duration of the network flow.                        |
 | ...|  | | |
 | 85 | traffic_category                | Category of network traffic.                       |
 | 86 | Label                           | The label assigned to the network flow, possibly indicating normal or malicious activity.|
