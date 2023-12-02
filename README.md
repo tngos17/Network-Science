@@ -91,8 +91,6 @@ Using a basic random forest classifier we are returned a rough model. By playing
 | False Negatives (FN) | 6576  |   8.54%    |
 |   Total Instances    | 77026 |  100.00%   |
 
-![Diagram (1)](https://github.com/tngos17/Network-Science/assets/64931318/ac27734b-baa9-4b76-b143-cf9984b8c22a)
-
 Interpretations:
 
 - Instances correctly predicted as malicious (TP): 963 (1.25%)
