@@ -63,7 +63,9 @@ As we can see varience drops quite heavily, so lets narrow it down a little.
 
 ![download](https://github.com/tngos17/Network-Science/assets/64931318/0eb4db1f-bb10-472d-befe-eb9e57b478bd)
 
-Another interesting visualization is the deploy the Pearson Correlation Heatmap. Fancy as it looks, this kind of specification is more of an exploritory element than a true benefit in terms of model fit.
+Another interesting visualization is the deploy the Pearson Correlation Heatmap. Pearson correlation ranges from -1 to 1, where 1 indicates a perfect positive correlation, -1 indicates a perfect negative correlation, and 0 indicates no correlation. Looking at the top values (closer to 1), it seems that certain pairs of variables have a very strong positive correlation. For example, the variables `fwd_iat.tot` and `flow_iat.tot` have a correlation coefficient of 1.00, indicating a perfect positive correlation, which makes sense as they self identify. Similarly, `flow_iat.max` and `idle.max` also have a perfect positive correlation.
+
+For building a predictive model, we should consider variables that have a strong correlation with the target variable or with each other. However, keep in mind that correlation does not imply causation, and further analysis or experimentation may be needed to understand the relationships. Fancy as it looks, this kind of specification is more of an exploritory element than a true benefit in terms of model fit.
 
 ![download](https://github.com/tngos17/Network-Science/assets/64931318/17bfadfc-f321-4931-a593-d065d9b6a1d8)
 
