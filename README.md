@@ -79,3 +79,7 @@ Almost all of these correlations are due to statistical self-reference and shoul
 
 # Random Forest Classifier
 ![Diagram](https://github.com/tngos17/Network-Science/assets/64931318/f9e60b91-f919-49ee-94bd-53e6b87ea9c4)
+
+Using a basic random forest classifier we are returned a rough model. By playing around with a cocktail of features and model arraingements I was able to get the following model specifications:
+
+
