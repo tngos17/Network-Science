@@ -82,17 +82,14 @@ Almost all of these correlations are due to statistical self-reference and shoul
 
 Using a basic random forest classifier we are returned a rough model. By playing around with a cocktail of features and model arraingements I was able to get the following model specifications to an baseline accuracy of 0.84. We have yet to accoount for many of the traditional hurdles which may present our findings as more descriptive of our features than the actual targets.
 
-```
-+----------------------+-------+------------+
 |        Metric        | Count | Percentage |
-+----------------------+-------+------------+
+|----------------------|-------|------------|
 | True Positives (TP)  |  963  |   1.25%    |
 | True Negatives (TN)  | 63785 |   82.81%   |
 | False Positives (FP) | 5702  |   7.40%    |
 | False Negatives (FN) | 6576  |   8.54%    |
 |   Total Instances    | 77026 |  100.00%   |
-+----------------------+-------+------------+
-```
+
 
 Interpretations:
 
